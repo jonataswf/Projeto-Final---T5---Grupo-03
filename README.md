@@ -1,4 +1,4 @@
-# Projeto Final - ItauTECH | Grupo 03
+# Projeto Final - ItauTECH
 
 <h4 align="center"> 
 	🚧  Imagem em desenvolvimento . . . 🚧
