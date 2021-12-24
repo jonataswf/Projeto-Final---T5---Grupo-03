@@ -58,9 +58,9 @@ Todos os dados devem ser retornados em formato JSON.
 Leia o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para saber detalhes sobre o nosso código de conduta e o processo de envio de solicitações *pull* (*Pull Request*) para nós.
 
 # Autores
-- Jacqueline Poletto Tulio Rodrigues
+- [Jacqueline Poletto Tulio Rodrigues](https://github.com/jacquepoletto)
 - [João Roberto dos Santos Ramos Guidugli](https://github.com/engjobe)
-- Jonatas Willian de Freitas
+- [Jonatas Willian de Freitas](https://github.com/jonataswf)
 - Jonathan Euzebio Boza
 - Jones Bastos da Silva
 
