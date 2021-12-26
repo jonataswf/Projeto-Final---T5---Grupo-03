@@ -5,15 +5,15 @@
 </h4>
 
 ## 📋 Sumário
-* [Visão Geral](#visão-geral)
-* [Objetivos](#objetivos)
-* [Especificações](#especificações)
-* [Entregáveis](#entregáveis)
-* [Tecnologias Usadas](#tecnologias-usadas)
-* [Contribuição](#contribuição)
-* [Autores](#autores)
-* [Licença](#licença)
-* [Agradecimentos](#agradecimentos)
+* [Visão Geral](visão-geral)
+* [Objetivos](objetivos)
+* [Especificações](especificações)
+* [Entregáveis](entregáveis)
+* [Tecnologias Usadas](tecnologias-usadas)
+* [Contribuição](contribuição)
+* [Autores](autores)
+* [Licença](licença)
+* [Agradecimentos](agradecimentos)
 
 ## 📌 Visão Geral
 Estamos em um contexto de gerenciamento de clientes e contas bancárias da instituição. <br>
