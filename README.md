@@ -4,7 +4,7 @@
 	🚧  Imagem em desenvolvimento . . . 🚧
 </h4>
 
-## 📋 Sumário
+## Sumário
 * [Visão Geral](#visão-geral)
 * [Objetivos](#objetivos)
 * [Especificações](#especificações)
