@@ -65,6 +65,9 @@ Leia o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para saber detalhes sobre o no
 Este projeto está licenciado sob a Licença MIT, consulte o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
 
 ## Agradecimentos
-<h4 align="center"> 
-	🚧  Em desenvolvimento . . . 🚧
+A todos os professores que contribuíram com o nosso aprendizado nesta jornada com paciência e atenção.
+
+À Gama Academy e todos os seus colaboradores que sempre nos ajudaram com prontidão.
+
+Ao Banco Itaú que acreditou no nosso potencial e nos proporcionou a realização desse sonho de fazer parte do time de itubers.
 </h4>
