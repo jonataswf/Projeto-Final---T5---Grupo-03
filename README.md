@@ -1,8 +1,6 @@
 # 🚀 Projeto Final - ItauTECH
 
-<h4 align="center"> 
-	🚧  Imagem em desenvolvimento . . . 🚧
-</h4>
+![Capa do Projeto](imagens/five.PNG)
 
 ## Sumário
 * [Visão Geral](#visão-geral)
@@ -10,9 +8,7 @@
 * [Especificações](#especificações)
 * [Entregáveis](#entregáveis)
 * [Tecnologias Usadas](#tecnologias-usadas)
-* [Contribuição](#contribuição)
 * [Autores](#autores)
-* [Licença](#licença)
 * [Agradecimentos](#agradecimentos)
 
 ## Visão Geral
@@ -51,9 +47,6 @@ Todos os dados devem ser retornados em formato JSON.
 - [MySQL](https://www.mysql.com/downloads/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
-## Contribuição
-Leia o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para saber detalhes sobre o nosso código de conduta e o processo de envio de solicitações *pull* (*Pull Request*) para nós.
-
 ## Autores
 - [Jacqueline Poletto Tulio Rodrigues](https://github.com/jacquepoletto)
 - [João Roberto dos Santos Ramos Guidugli](https://github.com/engjobe)
@@ -61,13 +54,9 @@ Leia o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para saber detalhes sobre o no
 - <img src="imagens/Jonathan.jpg" width="70px" /> [Jonathan Euzebio Boza](https://github.com/jebcode2021)
 - Jones Bastos da Silva
 
-## Licença
-Este projeto está licenciado sob a Licença MIT, consulte o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
-
 ## Agradecimentos
 A todos os professores que contribuíram com o nosso aprendizado nesta jornada com paciência e atenção.
 
 À Gama Academy e todos os seus colaboradores que sempre nos ajudaram com prontidão.
 
 Ao Banco Itaú que acreditou no nosso potencial e nos proporcionou a realização desse sonho de fazer parte do time de itubers.
-</h4>
