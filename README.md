@@ -1,4 +1,4 @@
-# 🚀 Projeto Final - ItauTECH
+# Projeto Final ItauTECH - Equipe fiveiTech
 
 ![Capa do Projeto](imagens/five.PNG)
 
