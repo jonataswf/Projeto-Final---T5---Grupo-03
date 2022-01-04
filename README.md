@@ -1,6 +1,8 @@
 # Projeto Final ItauTECH - Equipe fiveiTech
 
-![Capa do Projeto](imagens/five.PNG)
+  <div>
+    <img src="imagens/five.PNG" width = 60%>
+  </div>
 
 ## Sumário
 * [Visão Geral](#visão-geral)
