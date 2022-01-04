@@ -58,7 +58,7 @@ Leia o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para saber detalhes sobre o no
 - [Jacqueline Poletto Tulio Rodrigues](https://github.com/jacquepoletto)
 - [João Roberto dos Santos Ramos Guidugli](https://github.com/engjobe)
 - [Jonatas Willian de Freitas](https://github.com/jonataswf)
-- [Jonathan Euzebio Boza](https://github.com/jebcode2021)
+- <img src="Jonathanjpg" width="50px" /> - [Jonathan Euzebio Boza](https://github.com/jebcode2021)
 - Jones Bastos da Silva
 
 ## Licença
