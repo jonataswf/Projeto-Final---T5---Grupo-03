@@ -1,4 +1,4 @@
-# 🚀 Projeto Final - ItauTECH
+# 🚀 Projeto Final ItauTECH - Equipe fiveiTech
 
 <h4 align="center"> 
 	🚧  Imagem em desenvolvimento . . . 🚧
