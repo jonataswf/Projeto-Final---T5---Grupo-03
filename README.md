@@ -27,8 +27,10 @@ consulta).
 
 ## Objetivos
 Construir uma API Spring BOOT que possua 2 endpoints principais: <br>
-a. Recuperação de todas as contas bancárias <br>
-b. Recuperação dos detalhes de 1 conta bancária (inclusive dados do seu titular)
+
+A. `Recuperação de todas as contas bancárias`
+
+B. `Recuperação dos detalhes de 1 conta bancária (inclusive dados do seu titular)`
 
 ## Especificações
 Algumas tecnologias são obrigatórias para este projeto: <br>
