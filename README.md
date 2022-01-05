@@ -108,8 +108,8 @@ Todos os dados devem ser retornados em formato JSON.
 #
 
 ### Agradecimentos
-A todos os professores que contribuíram com o nosso aprendizado nesta jornada com paciência e atenção.
+A todos os professores que contribuíram com o nosso aprendizado nesta jornada com paciência e atenção. :heartpulse:
 
-À Gama Academy e todos os seus colaboradores que sempre nos ajudaram com prontidão.
+À Gama Academy e todos os seus colaboradores que sempre nos ajudaram com prontidão. :heartpulse:
 
-Ao Banco Itaú que acreditou no nosso potencial e nos proporcionou a realização desse sonho de fazer parte do time de itubers.
+Ao Banco Itaú que acreditou no nosso potencial e nos proporcionou a realização desse sonho de fazer parte do time de itubers. :heartpulse:
