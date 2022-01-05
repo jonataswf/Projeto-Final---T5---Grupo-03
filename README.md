@@ -5,19 +5,19 @@
   </div>
 
 ### Sumário
-● `Visão Geral`
+● [Visão Geral](Visão-geral)
 
-● `Objetivos`
+● [Objetivos](Objetivos)
 
-● `Especificações`
+● [Especificações](Especificações)
 
-● `Entregáveis`
+● [Entregáveis](Entregáveis)
 
-● `Tecnologias Usadas`
+● [Tecnologias Usadas](Tecnologias-usadas)
 
-● `Autores`
+● [Autores](Autores)
 
-● `Agradecimentos`
+● [Agradecimentos](Agradecimentos)
 #
 
 ### Visão Geral
