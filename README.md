@@ -1,7 +1,7 @@
 # Projeto Final ItauTECH - Equipe fiveiTech
 
   <div>
-    <img src="imagens/five.PNG" width = 60%>
+    <img src="imagens/five.PNG" width = 100%>
   </div>
 
 ### Sumário
