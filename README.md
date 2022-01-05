@@ -5,14 +5,21 @@
   </div>
 
 ### Sumário
-● `Visão Geral` (#visão-geral)
+● `Visão Geral`(#visão-geral)
+
 ● `Objetivos`(#objetivos)
+
 ● `Especificações`(#especificações)
+
 ● `Entregáveis`(#entregáveis)
+
 ● `Tecnologias Usadas`(#tecnologias-usadas)
+
 ● `Autores`(#autores)
+
 ● `Agradecimentos`(#agradecimentos)
 
+#
 ## Visão Geral
 Estamos em um contexto de gerenciamento de clientes e contas bancárias da instituição. <br>
 Precisamos disponibilizar uma API que forneça dados de clientes e contas (inicialmente para
