@@ -5,20 +5,19 @@
   </div>
 
 ### Sumário
-● [Visão Geral](Visão-geral)
+● [Visão Geral](#visão-geral)
 
-● [Objetivos](Objetivos)
+● [Objetivos](#objetivos)
 
-● [Especificações](Especificações)
+● [Especificações](#especificações)
 
-● [Entregáveis](Entregáveis)
+● [Entregáveis](#entregáveis)
 
-● [Tecnologias Usadas](Tecnologias-usadas)
+● [Tecnologias Usadas](#tecnologias-usadas)
 
-● [Autores](Autores)
+● [Autores](#autores)
 
-● [Agradecimentos](Agradecimentos)
-#
+● [Agradecimentos](#agradecimentos)
 
 ### Visão Geral
 Estamos em um contexto de gerenciamento de clientes e contas bancárias da instituição. <br>
