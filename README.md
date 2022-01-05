@@ -29,19 +29,33 @@ Banco de Dados: MySQL <br>
 API: SpringBoot <br>
 Modelagem de Dados: <br>
 Toda conta bancária possui os seguintes dados <br>
-* numero
-* agência
-* tipo da conta (0 - conta corrente, 1 - poupança, 2 - investimento)
-* saldo
-* titular da conta (nome do titular)
 
-## Entregáveis
+● `Telefone` 
+
+● `numero`
+
+● `agência`
+
+● `tipo da conta (0 - conta corrente, 1 - poupança, 2 - investimento)`
+
+● `saldo`
+
+● `titular da conta (nome do titular)`
+
+### Entregáveis:
+
 Endpoint para consulta de todas as contas (deve retornar uma lista de objetos do tipo
-que armazena Conta Bancária): <br>
-*/contas*<br>
-Endpoint para consultas do detalhe da conta <br>
-*/contas/{id}*<br>
+que armazena Conta Bancária):
+
+    /contas
+
+Endpoint para consultas do detalhe da conta
+
+    /contas/{id}
+
 Todos os dados devem ser retornados em formato JSON.
+
+#
 
 ## Tecnologias Usadas
 - [GIT](https://git-scm.com/downloads)
@@ -50,11 +64,31 @@ Todos os dados devem ser retornados em formato JSON.
 - [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Autores
-- [Jacqueline Poletto Tulio Rodrigues](https://github.com/jacquepoletto)
-- [João Roberto dos Santos Ramos Guidugli](https://github.com/engjobe)
-- [Jonatas Willian de Freitas](https://github.com/jonataswf)
-- [Jonathan Euzebio Boza](https://github.com/jebcode2021)
-- Jones Bastos da Silva
+
+<summary>Jacqueline Poletto Tulio Rodrigues</summary>
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jacquepoletto)
+
+<summary>João Roberto dos Santos Ramos Guidugli</summary>
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/engjobe)
+
+<summary>Jonatas Willian de Freitas</summary>
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jonataswf)
+
+<summary>Jonathan Euzebio Boza</summary>
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jebcode2021)
+
+<summary>Jones Bastos da Silva</summary>
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]()
 
 ## Agradecimentos
 A todos os professores que contribuíram com o nosso aprendizado nesta jornada com paciência e atenção.
