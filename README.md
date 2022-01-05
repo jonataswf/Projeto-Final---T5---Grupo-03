@@ -1,4 +1,4 @@
-# <div align="center"> Projeto Final ItauTECH - Equipe fiveiTech </div>
+# <div align="center"> Programa de Formação Tech | Itaú - Equipe fiveiTech </div>
 
   <div>
     <img src="imagens/five.PNG" width = 100%>
