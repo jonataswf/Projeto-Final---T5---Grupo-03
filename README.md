@@ -4,14 +4,14 @@
     <img src="imagens/five.PNG" width = 60%>
   </div>
 
-## Sumário
-* [Visão Geral](#visão-geral)
-* [Objetivos](#objetivos)
-* [Especificações](#especificações)
-* [Entregáveis](#entregáveis)
-* [Tecnologias Usadas](#tecnologias-usadas)
-* [Autores](#autores)
-* [Agradecimentos](#agradecimentos)
+### Sumário
+● `Visão Geral` (#visão-geral)
+● `Objetivos`(#objetivos)
+● `Especificações`(#especificações)
+● `Entregáveis`(#entregáveis)
+● `Tecnologias Usadas`(#tecnologias-usadas)
+● `Autores`(#autores)
+● `Agradecimentos`(#agradecimentos)
 
 ## Visão Geral
 Estamos em um contexto de gerenciamento de clientes e contas bancárias da instituição. <br>
