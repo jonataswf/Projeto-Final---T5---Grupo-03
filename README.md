@@ -53,7 +53,7 @@ Todos os dados devem ser retornados em formato JSON.
 - [Jacqueline Poletto Tulio Rodrigues](https://github.com/jacquepoletto)
 - [João Roberto dos Santos Ramos Guidugli](https://github.com/engjobe)
 - [Jonatas Willian de Freitas](https://github.com/jonataswf)
-- <img src="imagens/Jonathan.jpg" width="70px" /> [Jonathan Euzebio Boza](https://github.com/jebcode2021)
+- [Jonathan Euzebio Boza](https://github.com/jebcode2021)
 - Jones Bastos da Silva
 
 ## Agradecimentos
