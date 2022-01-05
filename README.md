@@ -18,21 +18,23 @@
 ● `Autores`
 
 ● `Agradecimentos`
-
 #
-## Visão Geral
+
+### Visão Geral
 Estamos em um contexto de gerenciamento de clientes e contas bancárias da instituição. <br>
 Precisamos disponibilizar uma API que forneça dados de clientes e contas (inicialmente para
 consulta).
+#
 
-## Objetivos
+### Objetivos
 Construir uma API Spring BOOT que possua 2 endpoints principais: <br>
 
 A. `Recuperação de todas as contas bancárias`
 
 B. `Recuperação dos detalhes de 1 conta bancária (inclusive dados do seu titular)`
+#
 
-## Especificações
+### Especificações
 Algumas tecnologias são obrigatórias para este projeto: <br>
 
 ● `Banco de Dados: MySQL`
@@ -40,8 +42,9 @@ Algumas tecnologias são obrigatórias para este projeto: <br>
 ● `API: SpringBoot`
 
 Modelagem de Dados: 
+Todo cliente possui os seguintes dados para serem cadastrados
 
-Toda conta bancária possui os seguintes dados <br>
+### Toda conta bancária possui os seguintes dados 
 
 ● `Telefone` 
 
@@ -54,6 +57,7 @@ Toda conta bancária possui os seguintes dados <br>
 ● `saldo`
 
 ● `titular da conta (nome do titular)`
+#
 
 ### Entregáveis:
 
@@ -67,16 +71,16 @@ Endpoint para consultas do detalhe da conta
     /contas/{id}
 
 Todos os dados devem ser retornados em formato JSON.
-
 #
 
-## Tecnologias Usadas
+### Tecnologias Usadas
 - [GIT](https://git-scm.com/downloads)
 - [JAVA](https://www.java.com/pt-BR/download/)
 - [MySQL](https://www.mysql.com/downloads/)
 - [Visual Studio Code](https://code.visualstudio.com/)
+#
 
-## Autores
+### Autores
 
 <summary>Jacqueline Poletto Tulio Rodrigues</summary>
 
@@ -102,8 +106,9 @@ Todos os dados devem ser retornados em formato JSON.
 
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()
 [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]()
+#
 
-## Agradecimentos
+### Agradecimentos
 A todos os professores que contribuíram com o nosso aprendizado nesta jornada com paciência e atenção.
 
 À Gama Academy e todos os seus colaboradores que sempre nos ajudaram com prontidão.
