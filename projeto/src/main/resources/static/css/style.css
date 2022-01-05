@@ -1,0 +1,115 @@
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+  }
+  
+  html,
+  body {
+	height: 100%;
+	width: 100%;
+  }
+  
+  body {	
+	background:linear-gradient(209deg, #bfbfbe 9%, #F1F3F2 36%);
+	background:-moz-linear-gradient(209deg, #bfbfbe 9%, #F1F3F2 36%);
+	background:-webkit-linear-gradient(209deg, #bfbfbe 9%, #F1F3F2 36%);
+	background:-o-linear-gradient(209deg, #bfbfbe 9%, #F1F3F2 36%);
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .cabecalho {
+	background-color: #FC5B03;
+	border-bottom: solid 3px #212374;
+	width: 100%;
+	padding: 10px;
+  }
+  .cabecalho .logo{display:flex}
+  .cabecalho h1 {
+	color: tomato;
+	font-size: 32px;
+  }
+ .cabecalho .content{
+	  max-width: 1240px;margin:0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	max-width: 1240px;
+	}
+  .menu {
+	display: flex;justify-content: end;
+  }
+  
+  .menu .menu2 {
+	margin-right: 20px;
+  }
+  
+  .menu .menu2 a {
+	color: white;
+  }
+  
+  .menu .menu2 a:hover {
+	color: #fce883;
+  }
+  
+  .imagem {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:linear-gradient(209deg, #bfbfbe 9%, #F1F3F2 36%);
+	background:-moz-linear-gradient(209deg, #bfbfbe 9%, #F1F3F2 36%);
+	background:-webkit-linear-gradient(209deg, #bfbfbe 9%, #F1F3F2 36%);
+	background:-o-linear-gradient(209deg, #bfbfbe 9%, #F1F3F2 36%);
+	width: 100%;
+  }
+	
+  .imagem img {
+	display: inline-block;
+    width: calc(35vw - 73px)
+  }
+  
+  .imagem .bem-vindo {
+	text-align: center;
+  }
+  .imagem .bem-vindo h2{
+	    color: #2e3191;
+    font-size: 2.5rem;
+	text-align: left;
+  }
+  .imagem .bem-vindo h1{
+	color: #e35000;
+    font-size: 2rem;
+    text-align: left;
+  }
+  .btn {
+	padding: 10px;
+	background: #3c5780;
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+	margin: 20px auto 0px auto;
+	text-align: center;
+	text-transform: uppercase;
+	width: 159px;
+  }
+  
+  .btn:hover {
+	background:#fca292;
+	color: #3c5780;
+  }
+  
+  .btn .btn-vermelho {
+	background: rgb(153, 52, 77);
+  }
+
+.center{text-align:center!important}
+
+a {
+	text-decoration: auto;
+}
+  
+p {
+	line-height: 1.6em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

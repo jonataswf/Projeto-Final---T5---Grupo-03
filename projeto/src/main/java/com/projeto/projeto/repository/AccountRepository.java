@@ -1,8 +1,8 @@
-package br.com.projeto.projeto.repository;
+package com.projeto.projeto.repository;
 
 import org.springframework.data.repository.CrudRepository;
 
-import br.com.projeto.projeto.model.Account;
+import com.projeto.projeto.model.Account;
 
 public interface AccountRepository extends CrudRepository<Account, Long>{
     

@@ -1,4 +1,4 @@
-package br.com.projeto.projeto.controller;
+package com.projeto.projeto.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.projeto.projeto.model.Account;
-import br.com.projeto.projeto.repository.AccountRepository;
+import com.projeto.projeto.model.Account;
+import com.projeto.projeto.repository.AccountRepository;
 
 @RestController
 @CrossOrigin("*")

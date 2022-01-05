@@ -1,4 +1,4 @@
-package br.com.projeto.projeto.controller;
+package com.projeto.projeto.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -14,12 +14,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.ModelAndView;
 
-import br.com.projeto.projeto.model.Client;
-import br.com.projeto.projeto.repository.ClientRepository;
+import com.projeto.projeto.model.Client;
+import com.projeto.projeto.repository.ClientRepository;
 
-@RestController
+@Controller
 @CrossOrigin("*")
 @RequestMapping("/clientes")
 public class ClientController {
@@ -27,6 +28,11 @@ public class ClientController {
     @Autowired
     private ClientRepository clientRepo;
 
+    @RequestMapping("/lista")
+    public ModelAndView getList(){
+        ModelAndView mv = new ModelAndView("clientes");
+        return mv;
+    }
     @GetMapping
     public ResponseEntity<List<Client>> listAllClients() {
         List<Client> listAllClients = (List<Client>) clientRepo.findAll();
