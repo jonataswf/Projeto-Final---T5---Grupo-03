@@ -1,7 +1,7 @@
 # <div align="center"> Programa de Formação Tech | Itaú - Equipe fiveiTech </div>
 
   <div>
-    <img src="imagens/five.PNG" width = 100%>
+    <img src="imagens/cincoitech.png">
   </div>
 
 ### Sumário
