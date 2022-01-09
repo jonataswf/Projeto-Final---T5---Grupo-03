@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>.: FiveiTech :.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" th:href="@{/img/favicon.png}">
+
+	<!--css-->
+	<link rel="stylesheet" type="text/css" th:href="@{/js/datatables/css/jquery.dataTables.min.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/js/datatables/css/responsive.dataTables.min.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/DataTables_boot.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles-highligt/default.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/grade.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/auxiliar.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style-m.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/acorddion/style.css}">
+
+	<!--icones-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/3f3417947e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+			<!-- cabeçalho -->
+	<div class="base-topo" th:fragment="base-topo">
+		<div class="conteudo">
+			<a href="" class="menu-m"><i class="fas fa-bars"></i></a>
+			<a href="" class="logo"><img src="img/cincoitech.png" width="200px"></a>
+			<ul>
+				<li>
+					<a href="">
+						<span>ADMINISTRATIVA <small>Sair</small></span>
+						<div class="thumb"><img src="img/img-foto.png"></div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="base-home" th:fragment="base-home">
+		<div class="rows">
+			<div class="col-3 menu-lateral">
+				<ul class="bgn">
+					<li><a th:href="@{/}"><i class="fas fa-home"></i> Início</a></li>
+				</ul>
+				<div id="accordion">
+					<h3><i class="fas fa-user"></i> Cadastro Cliente</h3>
+					<ul class="cd-accordion cd-accordion--animated margin-top-lg margin-bottom-lg">
+						<li class="cd-accordion__item cd-accordion__item--has-children">
+						<li class="cd-accordion__item cd-accordion__item--has-children quebra">
+							<input class="cd-accordion__input" type="checkbox" name="sub-group-0" id="sub-group-0">
+							<label class="cd-accordion__label cd-accordion__label--icon-folder"
+								for="sub-group-0"><span>Consultar</span></label>
+							<ul class="cd-accordion__sub cd-accordion__sub--2">
+								<li class="accodion_sub_link"><a th:href="@{cliente/listagem}">lista de Cliente</a>
+								</li>
+								<li class="accodion_sub_link"><a th:href="@{cliente/cadastrar}">Cadastrar
+										Cliente</a></li>
+							</ul>
+						</li>
+						</li>
+					</ul>
+
+					<h3><i class="fas fa-user"></i> Cadastro Contas</h3>
+					<ul class="cd-accordion cd-accordion--animated margin-top-lg margin-bottom-lg">
+						<li class="cd-accordion__item cd-accordion__item--has-children">
+						<li class="cd-accordion__item cd-accordion__item--has-children quebra">
+							<input class="cd-accordion__input" type="checkbox" name="sub-group-11" id="sub-group-11">
+							<label class="cd-accordion__label cd-accordion__label--icon-folder"
+								for="sub-group-11"><span>Contas</span></label>
+							<ul class="cd-accordion__sub cd-accordion__sub--21">
+								<li class="accodion_sub_link"><a th:href="@{contas/listagem}">lista de Contas </a>
+								</li>
+								<li class="accodion_sub_link"><a th:href="@{contas/cadastrar}">cadastrar
+										Contas</a></li>
+							</ul>
+						</li>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="centro" th:fragment="centro">
+				<div class="caixa">
+					<span class="titulo text-center">SEJA BEM VINDO A SUA ÁREA ADMINISTRATIVA - <span
+							class="text-vermelho"> FiveiTech </span></span>
+					<div class="rows px-4 py-5">
+						<div class="col-3 mb-3">
+							<div class="caixa">
+								<i style="font-size:80px" class="fas fa-user"></i>
+								<span></span>
+								<a th:href="@{cliente/listagem}" class="btn btn-branco"><i
+										class="fas fa-arrow-right"></i>
+									cliente</a>
+							</div>
+						</div>
+
+						<div class="col-3 mb-3">
+							<div class="caixa">
+								<i style="font-size:80px" class="fas fa-user"></i>
+								<span></span>
+								<a th:href="@{contas/listagem}" class="btn btn-branco"><i
+										class="fas fa-arrow-right"></i>
+									Contas</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+
+<!-- script js -->
+<script th:src="@{/js/jquery.min.js}"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script th:src="@{/js/datatables/js/jquery.dataTables.min.js}"></script>
+<script th:src="@{/js/datatables/js/dataTables.responsive.min.js}"></script>
+<script th:src="@{/js/jquery.mask.js}"></script>
+<script th:src="@{/js/componentes/js_data_table.js}"></script>
+<script th:src="@{/js/js.js}"></script>
+<script th:src="@{/js/main.js}"></script>
+<script th:src="@{/js/mascara.js}"></script>
+<script th:src="@{/acorddion/util.js}"></script>
+<script th:src="@{/acorddion/main.js}"></script>
+<script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>.: FiveiTech - Cadastrar Cliente:.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" th:href="@{/img/favicon.png}">
+
+	<!--css-->
+	<link rel="stylesheet" type="text/css" th:href="@{/js/datatables/css/jquery.dataTables.min.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/js/datatables/css/responsive.dataTables.min.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/DataTables_boot.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles-highligt/default.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/grade.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/auxiliar.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style-m.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/acorddion/style.css}">
+
+	<!--icones-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/3f3417947e.js" crossorigin="anonymous"></script>
+</head>
+
+</head>
+
+<body>
+
+	<div class="base-topo">
+		<div class="conteudo">
+			<a href="" class="menu-m"><i class="fas fa-bars"></i></a>
+			<a href="" class="logo"><img th:src="@{/img/cincoitech.png}" width="200px"></a>
+			<ul>
+				<li>
+					<a th:href="@{/}">
+						<span>ADMINISTRATIVA <small>Sair</small></span>
+						<div class="thumb"><img th:src="@{/img/img-foto.png}"></div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="base-home">
+		<div class="rows">
+			<div class="col-3 menu-lateral">
+				<ul class="bgn">
+					<li><a href="@{/}"><i class="fas fa-home"></i> Início</a></li>
+				</ul>
+				<div id="accordion">
+					<h3><i class="fas fa-user"></i> Cadastro Cliente</h3>
+					<ul class="cd-accordion cd-accordion--animated margin-top-lg margin-bottom-lg">
+						<li class="cd-accordion__item cd-accordion__item--has-children">
+						<li class="cd-accordion__item cd-accordion__item--has-children quebra">
+							<input class="cd-accordion__input" type="checkbox" name="sub-group-0" id="sub-group-0">
+							<label class="cd-accordion__label cd-accordion__label--icon-folder"
+								for="sub-group-0"><span>Consultar</span></label>
+							<ul class="cd-accordion__sub cd-accordion__sub--2">
+								<li class="accodion_sub_link"><a th:href="@{listagem}">lista de Cliente</a></li>
+								<li class="accodion_sub_link"><a th:href="@{cadastrar}">Cadastrar Cliente</a>
+								</li>
+							</ul>
+						</li>
+						</li>
+					</ul>
+
+					<h3><i class="fas fa-user"></i> Cadastro Contas</h3>
+					<ul class="cd-accordion cd-accordion--animated margin-top-lg margin-bottom-lg">
+						<li class="cd-accordion__item cd-accordion__item--has-children">
+						<li class="cd-accordion__item cd-accordion__item--has-children quebra">
+							<input class="cd-accordion__input" type="checkbox" name="sub-group-11" id="sub-group-11">
+							<label class="cd-accordion__label cd-accordion__label--icon-folder"
+								for="sub-group-11"><span>Contas</span></label>
+							<ul class="cd-accordion__sub cd-accordion__sub--21">
+								<li class="accodion_sub_link"><a th:href="@{contas/listagem}">lista de Contas </a>
+								</li>
+								<li class="accodion_sub_link"><a th:href="@{contas/cadastrar}">cadastrar
+										Contas</a></li>
+							</ul>
+						</li>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="centro">
+				<div class="">
+					<div class="caixa mb-3">
+						<span class="titulo"><i class="fas fa-sign-in-alt"></i> Alterar cliente</span>
+						<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+							integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+							crossorigin="anonymous">
+
+						<style>
+							@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+							.msg {
+								display: block;
+								background: #de6d6d;
+								border-radius: 5px;
+								padding: 10px;
+								border: solid 1px #d74e4e;
+								color: #7f2e2e;
+								font-weight: 600;
+								margin: 5px auto;
+								font-family: 'Roboto', sans-serif;
+							}
+
+							.msg.sucesso {
+								background: rgba(0, 128, 0, 0.35);
+								border-color: #669866;
+								color: #4d754d;
+							}
+
+							.msg .fa-times {
+								float: right;
+								text-decoration: none
+							}
+
+							.msg.sucesso .fa-times {
+								color: #4d754d;
+							}
+
+							.msg.erro {
+								background: #e69f9f;
+								border-color: #967272;
+								color: #9a4848;
+							}
+
+							.msg.erro .fa-times {
+								color: #9a4848;
+							}
+
+							.msg.info {
+								background: #aed8e6;
+								border-color: #5899af;
+								color: #5594a9;
+							}
+
+							.msg.info .fa-times {
+								color: #5594a9;
+							}
+						</style>
+						<div>
+							<span id="cpfResponse"></span>
+						</div>
+
+						<form th:action="@{salvar}" method="post" th:object="${cliente}">
+							<input type="hidden" th:field="*{id}">
+							<div class="base-form cadastros">
+								<div class="rows mt-4">
+									<div class="rows">
+
+										<div class="col-4 mb-3">
+											<span class="label"> Nome</span> <input type="text"
+												name="name" class="form-campo" th:field="*{name}">
+										</div>
+										<div class="col-2 mb-3">
+											<span class="label"> CPF</span> <input type="text"
+												onkeyup="cpfCheck(this)" maxlength="14"
+												onkeydown="javascript: fMasc( this, mCPF );" name="cpf"
+												class="form-campo" th:field="*{cpf}">
+										</div>
+										<div class="col-4 mb-3">
+											<span class="label"> Profissão</span> <input type="text"
+												name="profissao" class="form-campo" th:field="*{profissao}">
+										</div>
+										<div class="col-2 mb-3">
+											<span class="label"> Cep</span> <input type="text"
+												maxlength="8" id="cep" name="cep" class="form-campo"
+												th:field="*{cep}">
+										</div>
+										<div class="col-4 mb-3">
+											<span class="label"> Endereço</span> <input type="text"
+												id="endereco" name="endereco" class="form-campo"
+												th:field="*{endereco}">
+										</div>
+										<div class="col-1 mb-3">
+											<span class="label"> Número</span> <input type="text"
+												name="numero" class="form-campo" th:field="*{numero}">
+										</div>
+										<div class="col-2 mb-3">
+											<span class="label"> Cidade</span> <input type="text"
+												name="cidade" id="cidade" class="form-campo"
+												th:field="*{cidade}">
+										</div>
+										<div class="col-2 mb-3">
+											<span class="label"> Bairro</span> <input type="text"
+												name="bairro" id="bairro" class="form-campo"
+												th:field="*{bairro}">
+										</div>
+										<div class="col-1 mb-3">
+											<span class="label"> UF</span> <input type="text" name="uf"
+												id="estado" class="form-campo" th:field="*{uf}">
+										</div>
+										<div class="col-2 mb-3">
+											<span class="label"> Celular</span> <input type="text"
+												name="celular" onkeydown="javascript: fMasc(this, mTel);"
+												maxlength="14" class="form-campo" th:field="*{celular}">
+										</div>
+										<div class="col-4 mb-3">
+											<span class="label"> Complemento</span> <input type="text"
+												name="complemento" class="form-campo"
+												th:field="*{complemento}">
+										</div>
+										<div class="col-4 mb-3">
+											<span class="label">selecionar Sexo</span> <select
+												class="form-campo" name="sexo">
+												<option
+													th:each="sexo : ${T(com.fiveitech.fiveitech.sexos.Sexos).values()}"
+													th:value="${sexo}" th:text="${sexo}"></option>
+											</select>
+										</div>
+										<div class="col-2 mb-3">
+											<span class="label"> Data de nascimento</span> <input
+												type="date" name="data_nascimento" class="form-campo"
+												th:field="*{data_nascimento}">
+										</div>
+									
+										<div class="col-12 mt-3">
+											<input type="submit" value="alterar"
+												class="btn btn-laranja m-auto d-table">
+										</div>
+
+
+									</div>
+								</div>
+
+							</div>
+					</div>
+				</div>
+			</div>
+			</form>
+
+		</div>
+
+	</div>
+	</div>
+	</div>
+	</div>
+</body>
+
+
+<!-- script js -->
+<script th:src="@{/js/jquery.min.js}"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script th:src="@{/js/datatables/js/jquery.dataTables.min.js}"></script>
+<script th:src="@{/js/datatables/js/dataTables.responsive.min.js}"></script>
+<script th:src="@{/js/jquery.mask.js}"></script>
+<script th:src="@{/js/componentes/js_data_table.js}"></script>
+<script th:src="@{/js/js.js}"></script>
+<script th:src="@{/js/main.js}"></script>
+<script th:src="@{/js/mascara.js}"></script>
+<script th:src="@{/acorddion/util.js}"></script>
+<script th:src="@{/acorddion/main.js}"></script>
+
+</html>
