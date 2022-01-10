@@ -1,11 +1,13 @@
 package com.fiveitech.fiveitech.controller;
 
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.fiveitech.fiveitech.dao.ContasDao;
@@ -29,18 +31,6 @@ public class ContasController {
 		mv.addObject("cliente", new Cliente());
 		return mv;
 	}
-
-	/*
-	 * // link de contas de action salvar
-	 * 
-	 * @PostMapping("acliente/contas/salvar/{titular_conta}")
-	 * public ModelAndView ListaContas(Contas contas) {
-	 * ModelAndView mv = new ModelAndView();
-	 * mv.setViewName("redirect:/cliente/listagem");
-	 * contasRepo.save(contas);
-	 * return mv;
-	 * }
-	 */
 
 	@GetMapping("cliente/contas/salvar/{titular_conta}")
 	public ModelAndView alterar(@PathVariable("id") Integer id) {
@@ -70,6 +60,7 @@ public class ContasController {
 		mv.addObject("contasList", contasRepo.findAll());
 		return mv;
 	}
+
 	// link de contas de listagem
 	@GetMapping("cliente/contas/cadastrar")
 	public ModelAndView Listagem(Contas contas, Cliente cliente) {
@@ -79,6 +70,7 @@ public class ContasController {
 		mv.addObject("contasList", contasRepo.findAll());
 		return mv;
 	}
+
 	// link de contas de listagem
 	@GetMapping("contas/cadastrar")
 	public ModelAndView Listage(Contas contas, Cliente cliente) {

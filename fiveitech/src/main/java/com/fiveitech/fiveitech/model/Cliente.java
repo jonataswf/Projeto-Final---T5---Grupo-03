@@ -1,16 +1,12 @@
 package com.fiveitech.fiveitech.model;
 
-import java.util.List;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "cliente")
@@ -23,7 +19,43 @@ public class Cliente {
     @Column(name = "nome")
     private String name;
 
-     public Integer getId() {
+	@Column(name = "cpf")
+    private String cpf;
+
+    @Column(name = "profissao")
+    private String profissao;
+
+    @Column(name = "cep")
+    private String cep;
+
+    @Column(name = "endereco")
+    private String endereco;
+
+    @Column(name = "complemento" )
+    private String complemento;
+
+    @Column(name = "numero")
+    private String numero;
+
+    @Column(name = "bairro")
+    private String bairro;
+
+    @Column(name = "cidade")
+    private String cidade;
+
+    @Column(name = "uf")
+    private String uf;
+
+    @Column(name = "celular")
+    private String celular;
+
+    @Column(name = "sexo")
+    private String sexo;
+
+    @Column(name = "data_nascimento")
+    private String data_nascimento;
+
+	public Integer getId() {
 		return id;
 	}
 
@@ -134,67 +166,5 @@ public class Cliente {
 	public void setData_nascimento(String data_nascimento) {
 		this.data_nascimento = data_nascimento;
 	}
-
-	public List<Contas> getContas() {
-		return contas;
-	}
-
-	public void setContas(List<Contas> contas) {
-		this.contas = contas;
-	}
-
-	@Column(name = "cpf")
-    private String cpf;
-
-    @Column(name = "profissao")
-    private String profissao;
-
-    @Column(name = "cep")
-    private String cep;
-
-    @Column(name = "endereco")
-    private String endereco;
-
-    @Column(name = "complemento" )
-    private String complemento;
-
-    @Column(name = "numero")
-    private String numero;
-
-    @Column(name = "bairro")
-    private String bairro;
-
-    @Column(name = "cidade")
-    private String cidade;
-
-    @Column(name = "uf")
-    private String uf;
-
-    @Column(name = "celular")
-    private String celular;
-
-    @Column(name = "sexo")
-    private String sexo;
-
-    @Column(name = "data_nascimento")
-    private String data_nascimento;
-
-    
-    @OneToMany(mappedBy = "ownerAccount")
-    @JsonIgnoreProperties("ownerAccount")
-
-    private List<Contas> contas;
-    
-    public List<Contas> getConta() {
-        return contas;
-    }
-
-    public void setConta(List<Contas> contas) {
-        this.contas = contas;
-    }
-
-   
-
-
 
 }

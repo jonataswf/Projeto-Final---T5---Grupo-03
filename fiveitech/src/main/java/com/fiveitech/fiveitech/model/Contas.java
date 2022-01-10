@@ -5,11 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "contas")
@@ -19,7 +16,20 @@ public class Contas {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "numero")
+	@Column(name = "titular_conta")
+	private String titular_conta;
+	
+    public String getTitular_conta() {
+		return titular_conta;
+	}
+
+
+	public void setTitular_conta(String titular_conta) {
+		this.titular_conta = titular_conta;
+	}
+
+
+	@Column(name = "numero")
     private Integer numeroconta;
 
     @Column(name = "agencia")
@@ -100,11 +110,5 @@ public class Contas {
 		this.saldo = saldo;
 	}
 
-	@ManyToOne
-    @JoinColumn(name = "titular_conta")
-    @JsonIgnoreProperties("contas")
-    private Cliente ownerAccount;
-
-   
 
 }

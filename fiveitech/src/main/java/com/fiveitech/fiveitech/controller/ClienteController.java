@@ -12,10 +12,11 @@ import com.fiveitech.fiveitech.model.Cliente;
 
 @Controller
 public class ClienteController {
-	
+
 	@Autowired
 	private ClienteDao clienteRepo;
-//	link de cliente de cadastrar novo
+
+	// link de cliente de cadastrar novo
 	@GetMapping("/cliente/cadastrar")
 	public ModelAndView cadastrar(Cliente cliente) {
 		ModelAndView mv = new ModelAndView();
@@ -23,7 +24,8 @@ public class ClienteController {
 		mv.addObject("cliente", new Cliente());
 		return mv;
 	}
-//	link de cliente de action salvar 
+
+	// link de cliente de action salvar
 	@PostMapping("cliente/salvar")
 	public ModelAndView ListaCliente(Cliente cliente) {
 		ModelAndView mv = new ModelAndView();
@@ -31,17 +33,17 @@ public class ClienteController {
 		clienteRepo.save(cliente);
 		return mv;
 	}
-	
-//	link de cliente de listagem
-@GetMapping("cliente/listagem")
-public ModelAndView ListagemCliente() {
-	ModelAndView mv = new ModelAndView();
-	mv.setViewName("cliente/ListaCliente");
-	mv.addObject("clienteList", clienteRepo.findAll());	
-	return mv;
-}
 
-//	link de cliente de listagem para alterado id cliente
+	// link de cliente de listagem
+	@GetMapping("cliente/listagem")
+	public ModelAndView ListagemCliente() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("cliente/ListaCliente");
+		mv.addObject("clienteList", clienteRepo.findAll());
+		return mv;
+	}
+
+	// link de cliente de listagem para alterado id cliente
 	@GetMapping("cliente/alterar/{id}")
 	public ModelAndView alterar(@PathVariable("id") Integer id) {
 		ModelAndView mv = new ModelAndView();
@@ -50,7 +52,8 @@ public ModelAndView ListagemCliente() {
 		mv.addObject("cliente", cliente);
 		return mv;
 	}
-//	link de cliente form action alterar salvar
+
+	// link de cliente form action alterar salvar
 	@PostMapping("cliente/alterar/salvar")
 	public ModelAndView alterar(Cliente cliente) {
 		ModelAndView mv = new ModelAndView();
@@ -58,11 +61,12 @@ public ModelAndView ListagemCliente() {
 		mv.setViewName("redirect:/cliente/listagem");
 		return mv;
 	}
-//	link de cliente de listagem excluir para id cliente
+
+	// link de cliente de listagem excluir para id cliente
 	@GetMapping("cliente/excluir/{id}")
 	public String excluirCliente(@PathVariable("id") Integer id) {
 		clienteRepo.deleteById(id);
 		return "redirect:/cliente/listagem";
 	}
-	
+
 }
