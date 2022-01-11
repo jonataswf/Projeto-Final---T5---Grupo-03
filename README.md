@@ -114,7 +114,7 @@ Todos os dados devem ser retornados em formato JSON.
 
 <summary>João Roberto dos Santos Ramos Guidugli</summary>
 
-[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jo%C3%A3o-guidugli-pcd-58897a1a2/)
 [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/engjobe)
 
 <summary>Jonatas Willian de Freitas</summary>
@@ -129,8 +129,8 @@ Todos os dados devem ser retornados em formato JSON.
 
 <summary>Jones Bastos da Silva</summary>
 
-[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()
-[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]()
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jones-bastos-73b22372)
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jonesbastos)
 #
 
 ### Agradecimentos
