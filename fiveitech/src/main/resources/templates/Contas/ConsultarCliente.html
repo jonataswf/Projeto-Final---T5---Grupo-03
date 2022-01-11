@@ -110,30 +110,79 @@
 				<div class="">
 					<div class="caixa mb-3">
 						<span class="titulo"><i class="fas fa-sign-in-alt"></i>
-							Cadastrar Contas</span>
-						<form action="salvar" method="post" th:object="${contas}">
+							Informações - Cliente</span>
+						<form th:object="${clienteList}">
 							<div class="base-form ">
 								<div class="rows">
 
+									<div class="col-4 mb-3">
+										<span class="label"> Nome</span> <input type="text" name="name"
+											class="form-campo" th:field="*{name}">
+									</div>
 									<div class="col-2 mb-3">
-										<span class="label">Titular de Conta</span> 
-										<input type="text"
-											placeholder="Digite nome de titular" 
-											th:field="*{ownerAccount}" class="form-campo">
+										<span class="label"> CPF</span> <input type="text" onkeyup="cpfCheck(this)"
+											maxlength="14" onkeydown="javascript: fMasc( this, mCPF );" name="cpf"
+											class="form-campo" th:field="*{cpf}">
 									</div>
 									<div class="col-4 mb-3">
-										<span class="label">selecionar Tipo de Conta</span> <select
-											class="form-campo" name="tipoconta">
-											<option value=''>Selecione</option>
-											<option
-												th:each="tipoconta : ${T(com.fiveitech.fiveitech.contas.tipo_conta).values()}"
-												th:value="${tipoconta}" th:text="${tipoconta}"></option>
-										</select>
+										<span class="label"> Profissão</span> <input type="text" name="profissao"
+											class="form-campo" th:field="*{profissao}">
 									</div>
+									<div class="col-2 mb-3">
+										<span class="label"> Cep</span> <input type="text" maxlength="8" id="cep"
+											name="cep" class="form-campo" th:field="*{cep}">
+									</div>
+									<div class="col-4 mb-3">
+										<span class="label"> Endereço</span> <input type="text" id="endereco"
+											name="endereco" class="form-campo" th:field="*{endereco}">
+									</div>
+									<div class="col-1 mb-3">
+										<span class="label"> Número</span> <input type="text" name="numero"
+											class="form-campo" th:field="*{numero}">
+									</div>
+									<div class="col-2 mb-3">
+										<span class="label"> Cidade</span> <input type="text" name="cidade"
+											id="cidade" class="form-campo" th:field="*{cidade}">
+									</div>
+									<div class="col-2 mb-3">
+										<span class="label"> Bairro</span> <input type="text" name="bairro"
+											id="bairro" class="form-campo" th:field="*{bairro}">
+									</div>
+									<div class="col-1 mb-3">
+										<span class="label"> UF</span> <input type="text" name="uf" id="estado"
+											class="form-campo" th:field="*{uf}">
+									</div>
+									<div class="col-2 mb-3">
+										<span class="label"> Celular</span> <input type="text" name="celular"
+											onkeydown="javascript: fMasc(this, mTel);" maxlength="14"
+											class="form-campo" th:field="*{celular}">
+									</div>
+									<div class="col-4 mb-3">
+										<span class="label"> Complemento</span> <input type="text"
+											name="complemento" class="form-campo" th:field="*{complemento}">
+									</div>	<div class="col-4 mb-3">
+										<span class="label"> Sexo</span> <input type="text"
+											name="complemento" class="form-campo" th:field="*{sexo}">
+									</div>
+									<div class="col-2 mb-3">
+										<span class="label"> Data de nascimento</span> <input type="date"
+											name="data_nascimento" class="form-campo" th:field="*{data_nascimento}">
+									</div>
+								</div>
+								<div class="caixa mb-3">
+						<span class="titulo "><i class="fas fa-sign-in-alt"></i>
+							Informações - Contas Bancarias</span>
+							<div class="base-form" ></div>
+								<div class="rows" th:object="${contasList}">
 
+									<div class="col-3 mb-3">
+										<span class="label">Tipo de Conta</span> <input type="text" name=""
+											placeholder="Tipo de Conta" maxlength="4"
+											class="form-campo" th:field="*{tipoconta}">
+									</div>
 									<div class="col-2 mb-3">
 										<span class="label">Agência</span> <input type="text" name=""
-											placeholder="Número de agência" maxlength="4"
+											placeholder="Agência" maxlength="4"
 											class="form-campo" th:field="*{agencia}">
 									</div>
 									<div class="col-2 mb-3">
@@ -148,14 +197,10 @@
 											onkeyup="formatarMoeda()" class="form-campo"
 											th:field="*{saldo}">
 									</div>
-									<div class="col-12 mt-3">
-										<input type="submit" value="salvar"
-											class="btn btn-laranja m-auto d-table">
-									</div>
+									
 								</div>
 							</div>
 						</form>
-					</div>
 				</div>
 			</div>
 		</div>

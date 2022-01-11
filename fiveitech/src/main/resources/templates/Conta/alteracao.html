@@ -118,11 +118,11 @@
 									<div class="col-2 mb-3">
 										<span class="label">Titular de Conta</span> 
 										<input type="text"
-											placeholder="Digite nome de titular" 
-											th:field="*{ownerAccount}" class="form-campo">
+											placeholder="Titular de Conta" maxlength="4"
+											th:field="*{titular_conta}" class="form-campo">
 									</div>
 									<div class="col-4 mb-3">
-										<span class="label">selecionar Tipo de Conta</span> <select
+										<span class="label">selecionar selecionar Tipo de Conta</span> <select
 											class="form-campo" name="tipoconta">
 											<option value=''>Selecione</option>
 											<option
@@ -149,7 +149,7 @@
 											th:field="*{saldo}">
 									</div>
 									<div class="col-12 mt-3">
-										<input type="submit" value="salvar"
+										<input type="submit" value="Salvar alterações"
 											class="btn btn-laranja m-auto d-table">
 									</div>
 								</div>

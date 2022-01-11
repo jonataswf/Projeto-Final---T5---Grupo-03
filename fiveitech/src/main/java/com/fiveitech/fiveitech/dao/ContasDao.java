@@ -1,11 +1,14 @@
 package com.fiveitech.fiveitech.dao;
 
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.Optional;
 
 import com.fiveitech.fiveitech.model.Contas;
 
-public interface ContasDao extends JpaRepository<Contas, Integer> {
-	Contas getOne (Integer id);
-	
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ContasDao extends JpaRepository<Contas, Long> {
+	Optional<Contas>  findById(Long id);
+	Contas getOne (Long id);
+
 }

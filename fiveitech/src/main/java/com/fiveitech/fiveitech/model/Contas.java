@@ -5,8 +5,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "contas")
@@ -14,22 +17,9 @@ public class Contas {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
-	@Column(name = "titular_conta")
-	private String titular_conta;
-	
-    public String getTitular_conta() {
-		return titular_conta;
-	}
-
-
-	public void setTitular_conta(String titular_conta) {
-		this.titular_conta = titular_conta;
-	}
-
-
-	@Column(name = "numero")
+    @Column(name = "numero")
     private Integer numeroconta;
 
     @Column(name = "agencia")
@@ -37,78 +27,67 @@ public class Contas {
 
     @Column(name = "tipo_conta")
     private String tipoconta;
-    
+
     @Column(name = "saldo")
     private Double saldo;
 
-    
-    
+    public Integer getNumeroconta() {
+        return numeroconta;
+    }
 
-    public Integer getId() {
+    public void setNumeroconta(Integer numeroconta) {
+        this.numeroconta = numeroconta;
+    }
+
+    public String getTipoconta() {
+        return tipoconta;
+    }
+
+    public void setTipoconta(String tipoconta) {
+        this.tipoconta = tipoconta;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "titular_conta")
+    @JsonIgnoreProperties("conta")
+    private Cliente ownerAccount;
+
+	
+
+    public Long getId() {
 		return id;
 	}
 
-
-
-
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
-
-
-
-
-	public Integer getNumeroconta() {
-		return numeroconta;
-	}
-
-
-
-
-	public void setNumeroconta(Integer numeroconta) {
-		this.numeroconta = numeroconta;
-	}
-
-
-
 
 	public Integer getAgencia() {
 		return agencia;
 	}
 
-
-
-
 	public void setAgencia(Integer agencia) {
-		this.agencia = agencia;
-	}
+        this.agencia = agencia;
+    }
 
+    public Double getSaldo() {
+        return saldo;
+    }
 
+    public void setSaldo(Double saldo) {
+        this.saldo = saldo;
+    }
 
+    public Cliente getOwnerAccount() {
+        return ownerAccount;
+    }
 
-	public String getTipoconta() {
-		return tipoconta;
-	}
+    public void setOwnerAccount(Cliente ownerAccount) {
+        this.ownerAccount = ownerAccount;
+    }
 
-
-
-
-	public void setTipoconta(String tipoconta) {
-		this.tipoconta = tipoconta;
-	}
-
-
-
-	public Double getSaldo() {
-		return saldo;
-	}
-
-
-
-
-	public void setSaldo(Double saldo) {
-		this.saldo = saldo;
-	}
-
+    public boolean isPresent() {
+        return false;
+    }
 
 }

@@ -2,7 +2,7 @@
 <html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<title>.: FiveiTech - Cliente :.</title>
+	<title>.: FiveiTech - Contas :.</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- favicon -->
@@ -26,6 +26,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/3f3417947e.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="site">
@@ -36,7 +37,7 @@
 			<a href="" class="logo"><img th:src="@{/img/cincoitech.png}" width="200px"></a>
 			<ul>
 				<li>
-					<a th:href="@{/}">
+					<a href="login/logoff">
 						<span>ADMINISTRATIVA <small>Sair</small></span>
 						<div class="thumb"><img th:src="@{/img/img-foto.png}"></div>
 					</a>
@@ -61,8 +62,8 @@
 								for="sub-group-0"><span>Consultar</span></label>
 
 							<ul class="cd-accordion__sub cd-accordion__sub--2">
-								<li class="accodion_sub_link"><a th:href="@{listagem}">lista de Cliente</a></li>
-								<li class="accodion_sub_link"><a th:href="@{cadastrar}">Cadastrar Cliente</a></li>
+								<li class="accodion_sub_link"><a th:href="@{/cliente/listagem}">lista de Cliente</a></li>
+								<li class="accodion_sub_link"><a th:href="@{cliente/cadastrar}">Cadastrar Cliente</a></li>
 							</ul>
 
 
@@ -81,8 +82,8 @@
 								for="sub-group-11"><span>Contas</span></label>
 
 							<ul class="cd-accordion__sub cd-accordion__sub--21">
-								<li class="accodion_sub_link"><a th:href="@{contas/listagem}">lista de Contas </a></li>
-								<li class="accodion_sub_link"><a th:href="@{contas/cadastrar}">cadastrar Contas</a></li>
+								<li class="accodion_sub_link"><a th:href="@{listagem}">lista de Contas </a></li>
+								<li class="accodion_sub_link"><a th:href="@{cadastrar}">cadastrar Contas</a></li>
 							</ul>
 						</li>
 						</li>
@@ -94,48 +95,36 @@
 			</div>
 			<div class="centro">
 				<div class="caixa">
-					<span class="titulo"><i class="fas fa-list"></i> lista de cliente</span>
+					<span class="titulo"><i class="fas fa-list"></i> lista de contas</span>
 					<div class="p-1">
 						<div class="d-flex text-end">
-							<a th:href="@{cadastrar}" class="btn btn-laranja" title="Adicionar novo"><i
-									class="fas fa-plus-circle"></i> Adicionar novo</a>
+							<a th:href="@{pesquisar}" class="btn btn-vermelho" title="Editar"><i
+									class="fas fa-search"></i> Pesquisar</a>
 						</div>
 						<table id="dataTable" width="100%" border="0" cellpadding="0" cellspacing="0" class="tabela">
 							<thead>
 								<tr>
 									<th align="left">ID</th>
 									<th align="left">Titular de conta</th>
-									<th align="center">CPF</th>
-									<th align="center">CEP</th>
-									<th align="center">Endereço</th>
-									<th align="center">Cidade</th>
-									<th align="center">SC</th>
-									<th align="center">Contas bancarias</th>
-									<th align="center">Consultar</th>
+									<th align="center">Agência</th>
+									<th align="center">Número de conta</th>
+									<th align="center">Saldo</th>
+									<th align="center">Tipo de conta</th>
 									<th align="center">Ação</th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr th:each="cliente: ${clienteList}">
-									<td th:text="${cliente.id}">01</td>
-									<td th:text="${cliente.name}">Jonathan Euzébio Boza</td>
-									<td align="center"  th:text="${cliente.cpf}">111.111.111-11</td>
-									<td align="center"  th:text="${cliente.cep}">89295-000</td>
-									<td align="center"  th:text="${cliente.endereco}">Rua Brigadeiro Franco</td>
-									<td align="center"  th:text="${cliente.cidade}">Rio Negrinho</td>
-									<td align="center"  th:text="${cliente.uf}">SC</td>
-									<td class="text-center">
-										<a th:href="@{contas/novos/{id}(id=${cliente.id})}" class="btn btn-verde" title="Adicionar contas bancarias"><i
-												class="fas fa-edit"></i>Adicionar contas</a>
-									</td>
-									<td class="text-center">
-										<a th:href="@{listagem/{id}(id=${cliente.id})}" class="btn btn-vermelho" title="Adicionar contas bancarias"><i
-												class="fas fa-search"></i></a>
-									</td>
-									<td class="text-center">
-										<a th:href="@{alterar/{id}(id=${cliente.id})}" class="btn btn-verde btn-circle" title="Editar"><i
+								<tr th:each="contas: ${contasList}">
+									<td th:text="${contas.id}">01</td>
+									<td th:text="${contas.titular_conta}"></td>
+									<td align="center" th:text="${contas.agencia}"></td>
+									<td align="center" th:text="${contas.numeroconta}"></td>
+									<td align="center" th:text="${contas.saldo}"></td>
+									<td align="center" th:text="${contas.tipoconta}"></td>
+										<td class="text-center">
+										<a th:href="@{alterar/{id}(id=${contas.id})}" class="btn btn-verde btn-circle" title="Editar"><i
 												class="fas fa-edit"></i></a>
-										<a th:href="@{excluir/{id}(id=${cliente.id})}" class="btn btn-vermelho btn-circle" title="Excluir"><i
+										<a th:href="@{excluir/{id}(id=${contas.id})}" class="btn btn-vermelho btn-circle" title="Excluir"><i
 												class="fas fa-trash-alt"></i></a>
 									</td>
 								</tr>

@@ -1,20 +1,24 @@
 package com.fiveitech.fiveitech.model;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "cliente")
 public class Cliente {
 
-    @Id
+	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
     
     @Column(name = "nome")
     private String name;
@@ -55,12 +59,12 @@ public class Cliente {
     @Column(name = "data_nascimento")
     private String data_nascimento;
 
-	public Integer getId() {
-		return id;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public Long getId() {
+		return id;
 	}
 
 	public String getName() {
@@ -166,5 +170,19 @@ public class Cliente {
 	public void setData_nascimento(String data_nascimento) {
 		this.data_nascimento = data_nascimento;
 	}
+
+	@OneToMany(mappedBy = "ownerAccount")
+    @JsonIgnoreProperties("ownerAccount")
+
+    private List<Contas> conta;
+
+
+	public List<Contas> getConta() {
+        return conta;
+    }
+
+    public void setConta(List<Contas> conta) {
+        this.conta = conta;
+    }
 
 }

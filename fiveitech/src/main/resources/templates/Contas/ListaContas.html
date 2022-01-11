@@ -98,14 +98,11 @@
 					<span class="titulo"><i class="fas fa-list"></i> lista de contas</span>
 					<div class="p-1">
 						<div class="d-flex text-end">
-							<a th:href="@{pesquisar}" class="btn btn-vermelho" title="Editar"><i
-									class="fas fa-search"></i> Pesquisar</a>
 						</div>
 						<table id="dataTable" width="100%" border="0" cellpadding="0" cellspacing="0" class="tabela">
 							<thead>
 								<tr>
 									<th align="left">ID</th>
-									<th align="left">Titular de conta</th>
 									<th align="center">Agência</th>
 									<th align="center">Número de conta</th>
 									<th align="center">Saldo</th>
@@ -115,8 +112,7 @@
 							</thead>
 							<tbody>
 								<tr th:each="contas: ${contasList}">
-									<td th:text="${contas.id}">01</td>
-									<td th:text="${contas.titular_conta}"></td>
+									<td th:text="${contas.id}"></td>
 									<td align="center" th:text="${contas.agencia}"></td>
 									<td align="center" th:text="${contas.numeroconta}"></td>
 									<td align="center" th:text="${contas.saldo}"></td>
