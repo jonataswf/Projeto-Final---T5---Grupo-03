@@ -2,54 +2,43 @@
 <html lang="pt-br">
 
 <head>
-<title>.: FiveiTech - Cadastrar Contas :.</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- favicon -->
-<link rel="shortcut icon" type="image/x-icon"
-	th:href="@{/img/favicon.png}">
+	<title>.: FiveiTech - Cadastrar Contas :.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" th:href="@{/img/favicon.png}">
 
-<!--css-->
-<link rel="stylesheet" type="text/css"
-	th:href="@{/js/datatables/css/jquery.dataTables.min.css}">
-<link rel="stylesheet" type="text/css"
-	th:href="@{/js/datatables/css/responsive.dataTables.min.css}">
-<link rel="stylesheet" type="text/css"
-	th:href="@{/css/DataTables_boot.css}">
-<link rel="stylesheet" type="text/css"
-	th:href="@{/css/styles-highligt/default.css}">
-<link rel="stylesheet" type="text/css" th:href="@{/css/grade.css}">
-<link rel="stylesheet" type="text/css" th:href="@{/css/auxiliar.css}">
-<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
-<link rel="stylesheet" type="text/css" th:href="@{/css/style-m.css}">
-<link rel="stylesheet" type="text/css" th:href="@{/acorddion/style.css}">
+	<!--css-->
+	<link rel="stylesheet" type="text/css" th:href="@{/js/datatables/css/jquery.dataTables.min.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/js/datatables/css/responsive.dataTables.min.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/DataTables_boot.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles-highligt/default.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/grade.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/auxiliar.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style-m.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/acorddion/style.css}">
 
-<!--icones-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-	rel="stylesheet">
-<link rel="stylesheet"
-	href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet"
-	href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-<link rel="stylesheet"
-	href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-	crossorigin="anonymous">
-<script src="https://kit.fontawesome.com/3f3417947e.js"
-	crossorigin="anonymous"></script>
+	<!--icones-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/3f3417947e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<div class="base-topo">
 		<div class="conteudo">
-			<a href="" class="menu-m"><i class="fas fa-bars"></i></a> <a href=""
-				class="logo"><img th:src="@{/img/cincoitech.png}" width="200px"></a>
+			<a href="" class="menu-m"><i class="fas fa-bars"></i></a> <a href="" class="logo"><img
+					th:src="@{/img/cincoitech.png}" width="200px"></a>
 			<ul>
 				<li><a th:href="@{/}"> <span>ADMINISTRATIVA <small>Sair</small></span>
 						<div class="thumb">
 							<img th:src="@{/img/img-foto.png}">
 						</div>
-				</a></li>
+					</a></li>
 			</ul>
 		</div>
 	</div>
@@ -63,20 +52,16 @@
 					<h3>
 						<i class="fas fa-user"></i> Cadastro Cliente
 					</h3>
-					<ul
-						class="cd-accordion cd-accordion--animated margin-top-lg margin-bottom-lg">
+					<ul class="cd-accordion cd-accordion--animated margin-top-lg margin-bottom-lg">
 						<li class="cd-accordion__item cd-accordion__item--has-children">
-						<li
-							class="cd-accordion__item cd-accordion__item--has-children quebra">
-							<input class="cd-accordion__input" type="checkbox"
-							name="sub-group-0" id="sub-group-0"> <label
-							class="cd-accordion__label cd-accordion__label--icon-folder"
-							for="sub-group-0"><span>Consultar</span></label>
+						<li class="cd-accordion__item cd-accordion__item--has-children quebra">
+							<input class="cd-accordion__input" type="checkbox" name="sub-group-0" id="sub-group-0">
+							<label class="cd-accordion__label cd-accordion__label--icon-folder"
+								for="sub-group-0"><span>Consultar</span></label>
 							<ul class="cd-accordion__sub cd-accordion__sub--2">
-								<li class="accodion_sub_link"><a
-									th:href="@{cliente/listagem}">lista de Cliente</a></li>
-								<li class="accodion_sub_link"><a
-									th:href="@{cliente/cadastrar}">Cadastrar Cliente</a></li>
+								<li class="accodion_sub_link"><a th:href="@{cliente/listagem}">lista de Cliente</a></li>
+								<li class="accodion_sub_link"><a th:href="@{cliente/cadastrar}">Cadastrar Cliente</a>
+								</li>
 							</ul>
 						</li>
 						</li>
@@ -85,15 +70,12 @@
 					<h3>
 						<i class="fas fa-user"></i> Cadastro Contas
 					</h3>
-					<ul
-						class="cd-accordion cd-accordion--animated margin-top-lg margin-bottom-lg">
+					<ul class="cd-accordion cd-accordion--animated margin-top-lg margin-bottom-lg">
 						<li class="cd-accordion__item cd-accordion__item--has-children">
-						<li
-							class="cd-accordion__item cd-accordion__item--has-children quebra">
-							<input class="cd-accordion__input" type="checkbox"
-							name="sub-group-11" id="sub-group-11"> <label
-							class="cd-accordion__label cd-accordion__label--icon-folder"
-							for="sub-group-11"><span>Contas</span></label>
+						<li class="cd-accordion__item cd-accordion__item--has-children quebra">
+							<input class="cd-accordion__input" type="checkbox" name="sub-group-11" id="sub-group-11">
+							<label class="cd-accordion__label cd-accordion__label--icon-folder"
+								for="sub-group-11"><span>Contas</span></label>
 							<ul class="cd-accordion__sub cd-accordion__sub--21">
 								<li class="accodion_sub_link"><a th:href="@{listagem}">lista
 										de Contas </a></li>
@@ -117,94 +99,94 @@
 
 									<div class="col-4 mb-3">
 										<span class="label"> Nome</span> <input type="text" name="name"
-											class="form-campo" th:field="*{name}">
+											class="form-campo" th:field="*{name}" readonly="true">
 									</div>
 									<div class="col-2 mb-3">
 										<span class="label"> CPF</span> <input type="text" onkeyup="cpfCheck(this)"
 											maxlength="14" onkeydown="javascript: fMasc( this, mCPF );" name="cpf"
-											class="form-campo" th:field="*{cpf}">
+											class="form-campo" th:field="*{cpf}" readonly="true">
 									</div>
 									<div class="col-4 mb-3">
 										<span class="label"> Profissão</span> <input type="text" name="profissao"
-											class="form-campo" th:field="*{profissao}">
+											class="form-campo" th:field="*{profissao}" readonly="true">
 									</div>
 									<div class="col-2 mb-3">
 										<span class="label"> Cep</span> <input type="text" maxlength="8" id="cep"
-											name="cep" class="form-campo" th:field="*{cep}">
+											name="cep" class="form-campo" th:field="*{cep}" readonly="true">
 									</div>
 									<div class="col-4 mb-3">
 										<span class="label"> Endereço</span> <input type="text" id="endereco"
-											name="endereco" class="form-campo" th:field="*{endereco}">
+											name="endereco" class="form-campo" th:field="*{endereco}" readonly="true">
 									</div>
 									<div class="col-1 mb-3">
 										<span class="label"> Número</span> <input type="text" name="numero"
-											class="form-campo" th:field="*{numero}">
+											class="form-campo" th:field="*{numero}" readonly="true">
 									</div>
 									<div class="col-2 mb-3">
-										<span class="label"> Cidade</span> <input type="text" name="cidade"
-											id="cidade" class="form-campo" th:field="*{cidade}">
+										<span class="label"> Cidade</span> <input type="text" name="cidade" id="cidade"
+											class="form-campo" th:field="*{cidade}" readonly="true">
 									</div>
 									<div class="col-2 mb-3">
-										<span class="label"> Bairro</span> <input type="text" name="bairro"
-											id="bairro" class="form-campo" th:field="*{bairro}">
+										<span class="label"> Bairro</span> <input type="text" name="bairro" id="bairro"
+											class="form-campo" th:field="*{bairro}" readonly="true">
 									</div>
 									<div class="col-1 mb-3">
 										<span class="label"> UF</span> <input type="text" name="uf" id="estado"
-											class="form-campo" th:field="*{uf}">
+											class="form-campo" th:field="*{uf}" readonly="true">
 									</div>
 									<div class="col-2 mb-3">
 										<span class="label"> Celular</span> <input type="text" name="celular"
-											onkeydown="javascript: fMasc(this, mTel);" maxlength="14"
-											class="form-campo" th:field="*{celular}">
+											onkeydown="javascript: fMasc(this, mTel);" maxlength="14" class="form-campo"
+											th:field="*{celular}" readonly="true">
 									</div>
 									<div class="col-4 mb-3">
-										<span class="label"> Complemento</span> <input type="text"
-											name="complemento" class="form-campo" th:field="*{complemento}">
-									</div>	<div class="col-4 mb-3">
-										<span class="label"> Sexo</span> <input type="text"
-											name="complemento" class="form-campo" th:field="*{sexo}">
+										<span class="label"> Complemento</span> <input type="text" name="complemento"
+											class="form-campo" th:field="*{complemento}" readonly="true">
+									</div>
+									<div class="col-4 mb-3">
+										<span class="label"> Sexo</span> <input type="text" name="complemento"
+											class="form-campo" th:field="*{sexo}" readonly="true">
 									</div>
 									<div class="col-2 mb-3">
 										<span class="label"> Data de nascimento</span> <input type="date"
-											name="data_nascimento" class="form-campo" th:field="*{data_nascimento}">
+											name="data_nascimento" class="form-campo" th:field="*{data_nascimento}"
+											readonly="true">
 									</div>
 								</div>
 								<div class="caixa mb-3">
-						<span class="titulo "><i class="fas fa-sign-in-alt"></i>
-							Informações - Contas Bancarias</span>
-							<div class="base-form" ></div>
-								<div class="rows" th:object="${contasList}">
+									<span class="titulo "><i class="fas fa-sign-in-alt"></i>
+										Informações - Contas Bancarias</span>
+									<div class="base-form"></div>
+									<div class="rows" th:object="${contasList}">
 
-									<div class="col-3 mb-3">
-										<span class="label">Tipo de Conta</span> <input type="text" name=""
-											placeholder="Tipo de Conta" maxlength="4"
-											class="form-campo" th:field="*{tipoconta}">
+										<div class="col-3 mb-3">
+											<span class="label">Tipo de Conta</span> <input type="text" name=""
+												placeholder="Tipo de Conta" maxlength="4" class="form-campo"
+												th:field="*{tipoconta}" readonly="true">
+										</div>
+										<div class="col-2 mb-3">
+											<span class="label">Agência</span> <input type="text" name=""
+												placeholder="Agência" maxlength="4" class="form-campo"
+												th:field="*{agencia}" readonly="true">
+										</div>
+										<div class="col-2 mb-3">
+											<span class="label">Número de conta</span> <input type="text" name="ContaB"
+												placeholder="Número de conta" maxlength="8" required class="form-campo"
+												th:field="*{numeroconta}" readonly="true">
+										</div>
+										<div class="col-2 mb-3">
+											<span class="label">Saldo</span> <input type="text" name="saldo"
+												placeholder="R$ 0,00" maxlength="9" onkeyup="formatarMoeda()"
+												class="form-campo" th:field="*{saldo}" readonly="true">
+										</div>
+
 									</div>
-									<div class="col-2 mb-3">
-										<span class="label">Agência</span> <input type="text" name=""
-											placeholder="Agência" maxlength="4"
-											class="form-campo" th:field="*{agencia}">
-									</div>
-									<div class="col-2 mb-3">
-										<span class="label">Número de conta</span> <input type="text"
-											name="ContaB" placeholder="Número de conta" 
-											maxlength="8" required
-											class="form-campo" th:field="*{numeroconta}">
-									</div>
-									<div class="col-2 mb-3">
-										<span class="label">Saldo</span> <input type="text"
-											name="saldo" placeholder="R$ 0,00" maxlength="9" 
-											onkeyup="formatarMoeda()" class="form-campo"
-											th:field="*{saldo}">
-									</div>
-									
 								</div>
-							</div>
 						</form>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
 </body>
 
