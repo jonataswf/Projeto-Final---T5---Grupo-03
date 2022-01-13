@@ -103,8 +103,8 @@ public class ClienteController {
 	}
 
 	// link de cliente de listagem excluir para id cliente
-	@GetMapping("cliente/excluir/{id}")
-	public String excluirCliente(@PathVariable("id") Long id) {
+	@GetMapping("cliente/excluir/{ownerAccount}")
+	public String excluirCliente(@PathVariable("ownerAccount") Long id) {
 		clienteRepo.deleteById(id);
 		return "redirect:/cliente/listagem";
 	}

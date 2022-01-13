@@ -11,6 +11,9 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 @Entity
 @Table(name = "contas")
 public class Contas {
@@ -50,6 +53,7 @@ public class Contas {
     @ManyToOne
     @JoinColumn(name = "titular_conta")
     @JsonIgnoreProperties("conta")
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private Cliente ownerAccount;
 
 	

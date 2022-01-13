@@ -2,8 +2,10 @@ package com.fiveitech.fiveitech.model;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -11,6 +13,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import org.hibernate.annotations.Cascade;
 
 @Entity
 @Table(name = "cliente")
@@ -171,8 +175,10 @@ public class Cliente {
 		this.data_nascimento = data_nascimento;
 	}
 
-	@OneToMany(mappedBy = "ownerAccount")
+	//@OneToMany(mappedBy = "ownerAccount")
     @JsonIgnoreProperties("ownerAccount")
+	@OneToMany(cascade=CascadeType.REMOVE, fetch=FetchType.EAGER,mappedBy="ownerAccount", orphanRemoval=true)
+    @Cascade(org.hibernate.annotations.CascadeType.DELETE_ORPHAN)
 
     private List<Contas> conta;
 
