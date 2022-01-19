@@ -178,7 +178,7 @@ public class Cliente {
 	//@OneToMany(mappedBy = "ownerAccount")
     @JsonIgnoreProperties("ownerAccount")
 	@OneToMany(cascade=CascadeType.REMOVE, fetch=FetchType.EAGER,mappedBy="ownerAccount", orphanRemoval=true)
-    @Cascade(org.hibernate.annotations.CascadeType.DELETE_ORPHAN)
+    @Cascade(org.hibernate.annotations.CascadeType.DELETE)
 
     private List<Contas> conta;
 
